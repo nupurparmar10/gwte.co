@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -18,8 +18,28 @@
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <style>
-        .sticky-wrap {
+    body
+    {
+        /* background-image: url(bg.png); */
+        background-color: #fffaf0;
+    }
+    .header-layout1 .header-top
+    {
+        background-color: transparent;
+    }
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+ .sticky-wrap {
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -31,10 +51,47 @@
     align-items: center; /* Vertically center */
     height: 100%; 
 }
+.tagline-container {
+    text-align: center;
+    width: 100%;
+}
+
+.tagline-container hr {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #000; /* Dark color for the line */
+    margin: 10px auto;
+}
+
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .tagline-container hr {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .tagline-container hr {
+        width: 90%;
+    }
+    
+}
+
+.rest
+{
+    color:#4D5b83;
+}
+.highlight
+{
+    background-color: #fffaf0;
+    display: inline;
+}
     </style>
 </head>
 
-<body>
+<body >
     <div class="preloader">
         <button class="vs-btn preloaderCls">Cancel Preloader</button>
         <div class="preloader-inner">
@@ -55,18 +112,16 @@
                 <div class="row justify-content-between align-items-center gx-50">
                     <div class="col">
                         <div class="header-info">
-                            <ul>
+                            <!-- <ul>
                                 <li style="color:e57744;"><i class="fas fa-envelope" style="color:#e57744;"></i><a href="mailto:sakshi@gwte.co" style="font-size: 15px; color:#e57744;"> sakshi@gwte.co</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="col-auto d-none d-md-block">
                         <div class="header-social">
                             <ul>
-                                <li><a target="_blank" href="https://youtube.com/playlist?list=PLy64vVsiUkvbzdrq49lHXukus2ujQ6JsB&si=xCnB1nL-F3ISd8__"><i class="fab fa-youtube" style="color:#e57744;"></i></a></li>
-                                <li><a target="_blank"  href="https://podcasts.apple.com/in/podcast/girl-with-1000-expressions/id1734958374"><i class="fab fa-apple" style="color:#e57744;"></i></a></li>
-                                <li><a href="https://open.spotify.com/show/5e6KegXX4p1DwnAX3aoEpU?si=Xv8KlN4kSl-yGQK3gHfUBQ"><i class="fab fa-spotify" style="color:#e57744;"></i></a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/girlwith1000expressions?igsh=MXI0bnQ3c2hrZXd2cA=="><i class="fab fa-instagram" style="color:#e57744;"></i></a></li>
+                                <li class="highlight playfair"><a style="color:#4D5b83;" target="_blank" href="https://escape13.substack.com/">Blogs</a></li>
+                                <li class="highlight playfair"><a style="color:#4D5b83;" target="_blank" href="https://open.spotify.com/show/5e6KegXX4p1DwnAX3aoEpU?si=Xv8KlN4kSl-yGQK3gHfUBQ">Podcast</a></li>
                             </ul>
                         </div>
                     </div>
@@ -87,23 +142,45 @@
             </div>
         </div>
     </header>
-    <section class="space-top space-extra-bottom" data-bg-src="assets/img/bg/ab-bg-2-1.png" style="padding-top: 25px;">
+    <div class="tagline-container">
+        <hr></hr>
+    </div>
+    <section class="space-top space-extra-bottom" data-bg-src="assets/img/bg/ab-bg-2-1.png" style="padding-top: 0px;">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <!-- <div class="col-lg-6 col-xl-5 mb-30 mb-lg-0">
-                    <div class="img-box2">
-                        <div class="img-1"><img src="assets/img/about/ab-2-1.jpg" alt="about"></div>
-                    </div>
-                </div> -->
                 <div class="col-lg-12 col-xl-12">
                     <div class="about-wrap1">
-                        <div class="title-area text-center"><span class="sec-subtitle2">Girls with 1000 expressions X Guys with 1000 emotions</span>
-                            <p class="sec-text" style="font-weight:600;">How hard it is to cover the distance of "me to myself" ?<Br>
-                                This show is about you, who you are, to know it accept it and embrace it.<br>
-                                Why your focus should be you and how <Br>
-                                self awareness impacts everything around us? <br>
-                                I will share frameworks, philosophies and observations to cover that distance.<br>
-                                Ek hi piece ho yr betho toh khudke sath, jano toh khudko.</p>
+                        <div class="title-area text-center ">
+                            <span class="sec-subtitle2 playfair highlight" style="font-size:2rem;   display: inline; letter-spacing: 0.05em;
+                            padding: 0 1%;">
+                                <span>g</span><span class="rest">irls</span> 
+                                <span>w</span><span class="rest">ith</span> 
+                                <span>t</span><span class="rest">000</span> 
+                                <span>e</span><span class="rest">xpressions</span> 
+                                X 
+                                <span>g</span><span class="rest">uys</span> 
+                                <span>w</span><span class="rest">ith</span> 
+                                <span>t</span><span class="rest">000</span> 
+                                <span>e</span><span class="rest">motions</span>
+                            </span>
+                            <br>
+                            <br>
+                            <p class="sec-text playfair highlight">We all know that when a flower doesn’t bloom, it’s not because it lacks the capability but because it doesn't have a conducive environment or the required love. Yet, we often forget this when it comes to humans.<Br>
+                            Each of us holds unlimited potential, and we are here to help you realize that potential within yourself. We are here to help you bloom into your most beautiful self.<br>
+                            We are here to help you grow and be surrounded by love.<Br>
+                            We are here for you to <b>grow in love</b>. <br>
+                            Check out our podcast and subscribe to our newsletter to grow in love every week. Stay connected with us on Instagram to get updates on our latest projects. Feel free to contact us via email.</p>
+
+                            <br><br><br>
+                            <h6 class="playfair highlight">Connect with us</h6>
+                            <div class="header-social">
+                                <ul style="padding-left:0rem;">
+                                    <li><a href="mailto:sakshi@gwte.co"><i class="fa fa-envelope" style="color:#666666"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/girlwith1000expressions?igsh=MXI0bnQ3c2hrZXd2cA=="><i class="fab fa-instagram" style="color:#666666;"></i></a></li>
+                                    <li><a target="_blank"  href="https://youtube.com/playlist?list=PLy64vVsiUkvbzdrq49lHXukus2ujQ6JsB&si=xCnB1nL-F3ISd8__"><i class="fab fa-youtube" style="color:#666666;"></i></a></li>
+                                    <li><a target="_blank"  href="https://x.com/Sakshi__gupta13"><i class="fab fa-twitter" style="color:#666666;"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                         
                     </div>
@@ -111,39 +188,8 @@
             </div>
         </div>
     </section>
-    <div class="bg-theme space-extra">
-        <div class="container container-style2">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-12 col-xl-12">
-                  <div class="about-wrap1">
-                    <div class="title-area">
-                    <h4 class="sec-title text-center" style="color:#e57744; font-size:25px;">We are streaming on:</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          <div class="row vs-carousel text-center" data-slide-show="5" data-xl-slide-show="4" data-lg-slide-show="3" data-md-slide-show="3" data-sm-slide-show="3" data-xs-slide-show="2">
-            
-            <div class="col-auto">
-                <a href="https://youtube.com/playlist?list=PLy64vVsiUkvbzdrq49lHXukus2ujQ6JsB&si=xCnB1nL-F3ISd8__" target="_blank"><div><img src="assets/img/brand/youtube.png" style="max-width:55%!important;"></div></a>
-            </div>
-            <div class="col-auto">
-                <a href="https://open.spotify.com/show/5e6KegXX4p1DwnAX3aoEpU?si=Xv8KlN4kSl-yGQK3gHfUBQ" target="_blank"><div><img src="assets/img/brand/spotify1.png" style="max-width:60%!important;"></div></a>
-            </div>
-            <div class="col-auto">
-                <a href="https://podcasts.apple.com/in/podcast/girl-with-1000-expressions/id1734958374" target="_blank"><div><img src="assets/img/brand/apple1.png" style="max-width:60%!important;"></div></a>
-            </div>
-            <div class="col-auto">
-                <a href="https://escape13.substack.com/" target="_blank"><div><img src="assets/img/brand/substack1.png" style="max-width:80%!important;"></div></a>
-            </div>
-            <div class="col-auto">
-                <a href="https://www.instagram.com/girlwith1000expressions?igsh=MXI0bnQ3c2hrZXd2cA==" target="_blank"><div><img src="assets/img/brand/instagram.png" style="max-width:60%!important;"></div></a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-    <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-footer.jpg">
+    <footer class="footer-wrapper footer-layout1" style="background-color: #fffaf0; font-size: 11px;">
         <div class="container">
             <div class="copyright-wrap"  style="color:white;">
                 <p class="copyright-text" style="color:white;"></p>&copy; Copyright 2024 GWTE - Grow In Love | All Rights Reserved.  Developed By  <a href="https://nupurparmar.com/" target="_blank">Nupur Parmar</a></p>
